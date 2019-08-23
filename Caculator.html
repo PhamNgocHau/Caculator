@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+            <input type="text" value="" id="txt">
+            <input type="text" value="" id="txt1">
+    </div>
+    <p id="result"></p>
+    <div>
+        <button type="button" value="" onclick="addition()">Addition(+)</button>
+        <button type="button" value="" onclick="subtraction()">Subtraction(-)</button>
+        <button type="button" value="" onclick="multiplication()">Multiplication(X)</button>
+        <button type="button" value="" onclick="division()">Division(/)</button>
+    </div>
+
+    <script>
+        function addition() {
+            let txt = parseInt(document.getElementById("txt").value);
+            let txt1 = parseInt(document.getElementById("txt1").value);
+            document.getElementById("result").innerHTML="Addition(+)= "+(txt+txt1);
+
+        }
+        function subtraction() {
+            let txt = parseInt(document.getElementById("txt").value);
+            let txt1 = parseInt(document.getElementById("txt1").value);
+            document.getElementById("result").innerHTML="Subtraction(+)= "+(txt-txt1);
+        }
+        function multiplication() {
+            let txt = parseInt(document.getElementById("txt").value);
+            let txt1 = parseInt(document.getElementById("txt1").value);
+            document.getElementById("result").innerHTML="Multiplication(+)= "+(txt*txt1);
+        }
+        function division() {
+            let txt = parseInt(document.getElementById("txt").value);
+            let txt1 = parseInt(document.getElementById("txt1").value);
+            document.getElementById("result").innerHTML="Division(+)= "+(txt/txt1);
+        }
+    </script>
+</body>
+</html>
